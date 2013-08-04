@@ -1,0 +1,123 @@
+body {
+	background: #f5f5f5;
+}
+.container {
+	margin-top: 50px;
+}
+.konten {
+	margin-bottom: 70px;
+	min-height: 470px;
+}
+.konten, .form-login {
+	padding: 20px;
+	background: #fff;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+.login {
+	margin-top: 50px;
+}
+.form-login {
+	margin: 0 auto;
+	width: 520px;
+}
+.form-login h1 {
+	margin-bottom: 40px;
+}
+.menu .navbar-inner {
+	border-radius: 0;
+}
+.docs {
+	margin: 0 auto;
+}
+.docs div {
+	margin-top: 20px;
+}
+.form-rubah-foto {
+	margin-left: -150px;
+}
+.form-rubah-nama {
+	margin-top: 20px;
+}
+.form-horizontal {
+	margin-top: 20px;
+}
+.form-rubah-username {
+	margin-left: 40px;
+}
+.user {
+	text-transform: capitalize;
+}
+a:hover {
+	cursor: pointer;
+}
+.konten {
+	margin-top: 20px;
+}
+.kosong {
+	margin: 200px auto 0;
+	width: 500px;
+}
+#jarak {
+	height: 20px;
+}
+.table th input {
+	vertical-align: top;
+}
+.table .tengah {
+	text-align: center;
+}
+.table .rata {
+	text-align: justify;
+}
+.table .tengah input {
+	vertical-align: top;
+}
+.table td {
+	vertical-align: middle;
+}
+.dl-horizontal {
+	text-align: left;
+}
+.formulir {
+	margin-bottom: 20px;
+}
+.jarak-kanan {
+	margin-right: 20px;
+}
+textarea {
+	resize: none;
+}
+.input-foto {
+	width: 170px;
+}
+.modal-foto {
+	max-width: 250px;
+	max-height: 250px;
+}
+.typeahead {
+	max-width: 218px;
+	text-align: left;
+}
+.dropdown-menu > li > a {
+	white-space: normal;
+	padding: 4px 6px;
+}
+input[readonly] {
+	background: #fff;
+	cursor: pointer;
+}
+.progress {
+	margin: 0 auto;
+	width: 400px;
+}
+::selection {
+	color: #fff;
+	text-shadow: 1px 1px 1px #08c;
+} 
+::-moz-selection {
+	color: #fff;
+	text-shadow: 1px 1px 1px #08c;
+}

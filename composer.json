@@ -1,0 +1,40 @@
+{
+	"name": "brondong/digilib",
+	"description": "Aplikasi Perpustakaan untuk sekolah di Indonesia.",
+	"keywords": ["digilib", "indonesia", "perpustakaan"],
+	"require": {
+		"laravel/framework": "4.0.*",
+		"barryvdh/laravel-dompdf": "dev-master",
+		"phpoffice/phpexcel": "dev-master",
+		"rah/danpu": "2.*@dev"
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php",
+			"app/validator/HeruValidator.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan optimize"
+		],
+		"pre-update-cmd": [
+			"php artisan clear-compiled"
+		],
+		"post-update-cmd": [
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
