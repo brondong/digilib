@@ -70,37 +70,47 @@ function modalRubahSekolah(n)
 
 function enterRubahSekolah(k)
 {
+	k.preventDefault();
+
 	if (k.which == 13) rubahSekolah();
 }
 
 function rubahSekolah()
 {
-	var nama = $('#nama').val().trim();
-	var alamat = $('#alamat').val().trim();
-
-	$.post(url_rubah_sekolah, { nama:nama, alamat:alamat, _token:token }, function(r)
-	{
-		if (r.status == '')
+	$('.form-rubah-sekolah').ajaxSubmit({
+		success: function(r)
 		{
-			if (r.nama)
+			if (r.status == '')
 			{
-				$('#control-nama').removeClass('info').addClass('error');
-				$('#error-nama').text(r.nama);
-			} else {
-				$('#control-nama').removeClass('error').addClass('info');
-			};
+				if (r.logo)
+				{
+					$('#control-logo').removeClass('info').addClass('error');
+					$('#error-logo').text(r.logo);
+				} else {
+					$('#control-logo').removeClass('error').addClass('info');
+					$('#error-logo').text('');
+				};
 
-			if (r.alamat)
-			{
-				$('#control-alamat').removeClass('info').addClass('error');
-				$('#error-alamat').text(r.alamat);
+				if (r.nama)
+				{
+					$('#control-nama').removeClass('info').addClass('error');
+					$('#error-nama').text(r.nama);
+				} else {
+					$('#control-nama').removeClass('error').addClass('info');
+				};
+
+				if (r.alamat)
+				{
+					$('#control-alamat').removeClass('info').addClass('error');
+					$('#error-alamat').text(r.alamat);
+				} else {
+					$('#control-alamat').removeClass('error').addClass('info');
+				};
 			} else {
-				$('#control-alamat').removeClass('error').addClass('info');
-			};
-		} else {
-			$('.modal').modal('hide');
-			$('.modal').html('');
-			notif('Data sekolah berhasil dirubah.', 'info');
+				$('.modal').modal('hide');
+				$('.modal').html('');
+				notif('Data sekolah berhasil dirubah.', 'info');
+			}
 		}
 	});
 }
@@ -275,3 +285,8 @@ function properti()
 		paginasi(this);
 	});
 }
+
+$('.modal').on('shown', function()
+{
+	$('.input-focus').focus();
+});

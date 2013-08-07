@@ -53,6 +53,8 @@
 							{{ Form::button('<i class="icon-pencil"></i>', array('class' => 'btn btn-small tip', 'onclick' => "modalRubahSiswa($data->id)", 'title' => 'Rubah')) }}
 							{{ Form::button('<i class="icon-picture"></i>', array('class' => 'btn btn-small tip', 'onclick' => "modalLihatSiswa($data->id)", 'title' => 'Foto')) }}
 							{{ Form::button('<i class="icon-trash"></i>', array('class' => 'btn btn-small tip', 'onclick' => "modalHapusSiswa($data->id)", 'title' => 'Hapus')) }}
+							{{ Form::button('<i class="icon-qrcode"></i>', array('class' => 'btn btn-small tip', 'onclick' => "modalQRCode($data->id)", 'title' => 'QRCode')) }}
+							{{ Form::button('<i class="icon-bookmark"></i>', array('class' => 'btn btn-small tip', 'onclick' => "modalAnggota($data->id)", 'title' => 'Anggota')) }}
 						</div>
 					</td>
 				</tr>

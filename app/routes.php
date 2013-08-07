@@ -57,6 +57,12 @@ Route::post('siswa/hapus/{id?}', array('uses' => 'SiswaController@postHapus'))->
 Route::get('siswa/hapus/ceklis', array('as' => 'hapus_ceklis_siswa', 'uses' => 'SiswaController@getHapusCeklis'));
 Route::post('siswa/hapus/ceklis', array('uses' => 'SiswaController@postHapusCeklis'));
 
+Route::get('siswa/qrcode/{id?}', array('as' => 'qrcode', 'uses' => 'SiswaController@qrCode'))->where('id', '\d+');
+Route::get('siswa/qrcode/unduh/{id?}', array('as' => 'unduh_qrcode', 'uses' => 'SiswaController@unduhQrCode'))->where('id', '\d+');
+
+Route::get('siswa/anggota/{id?}', array('as' => 'anggota', 'uses' => 'SiswaController@anggota'))->where('id', '\d+');
+Route::get('siswa/anggota/unduh/{id?}', array('as' => 'unduh_anggota', 'uses' => 'SiswaController@unduhAnggota'))->where('id', '\d+');
+
 Route::get('siswa/pdf', array('as' => 'pdf_siswa', 'uses' => 'SiswaController@pdf'));
 
 Route::get('siswa/excel', array('as' => 'excel_siswa', 'uses' => 'SiswaController@excel'));

@@ -11,9 +11,10 @@ class Sekolah extends Eloquent {
 		return Sekolah::find(1);
 	}
 
-	public static function rubah($nama, $alamat)
+	public static function rubah($logo, $nama, $alamat)
 	{
 		$sekolah = Sekolah::find(1);
+		$sekolah->logo = $logo;
 		$sekolah->nama = $nama;
 		$sekolah->alamat = $alamat;
 		$sekolah->save();

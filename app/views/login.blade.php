@@ -3,12 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Login Admin</title>
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
-	<link rel="stylesheet" type="text/css" href="css/messenger.css" />
-	<link rel="stylesheet" type="text/css" href="css/future.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/messenger.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/future.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
 </head>
 <body>
 	<div class="container login">
@@ -47,13 +47,13 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/underscore.js"></script>
-	<script type="text/javascript" src="js/backbone.js"></script>
-	<script type="text/javascript" src="js/messenger.js"></script>
-	<script type="text/javascript" src="js/future.js"></script>
-	<script type="text/javascript" src="js/script/login.js"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/underscore.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/backbone.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/messenger.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/future.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/script/login.js') }}"></script>
 	<script type="text/javascript">
 		var url_home = '{{ route('home') }}';
 		var url_login = '{{ route('login') }}'; 

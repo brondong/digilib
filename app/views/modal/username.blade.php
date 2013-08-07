@@ -6,7 +6,7 @@
 		<div class="control-group" id="control-username-sekarang">
 			{{ Form::label('username_sekarang', 'Username Sekarang', array('class' => 'control-label')) }}
 			<div class="controls">
-				{{ Form::text('username_sekarang', null, array( 'id' => 'username_sekarang', 'onkeypress' => 'enterRubahUsername(event)', 'maxlength' => 20, 'autocomplete' => 'off', 'placeholder' => 'Ketikkan username sekarang...')) }}
+				{{ Form::text('username_sekarang', null, array( 'id' => 'username_sekarang', 'onkeypress' => 'enterRubahUsername(event)', 'maxlength' => 20, 'class' => 'input-focus', 'autocomplete' => 'off', 'placeholder' => 'Ketikkan username sekarang...')) }}
 				<span class="help-block" id="error-username-sekarang"></span>
 			</div>
 		</div>

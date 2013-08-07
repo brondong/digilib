@@ -3,19 +3,17 @@
 		<ul class="nav">
 			<li class="divider-vertical"></li>
 			<li id="link-buku"><a onclick="dataBuku()"><i class="icon-book"></i> Buku</a></li>
-			<li class="divider-vertical"></li>
-			
+			<li class="divider-vertical"></li>			
 			<li id="link-siswa"><a onclick="dataSiswa()"><i class="icon-briefcase"></i> Siswa</a></li>
-			<li class="divider-vertical"></li>
-			
+			<li class="divider-vertical"></li>			
 			<li id="link-peminjaman"><a onclick="dataPeminjaman()"><i class="icon-shopping-cart"></i> Peminjaman</a></li>
 			<li class="divider-vertical"></li>
 			<li id="link-pengembalian"><a onclick="dataPengembalian()"><i class="icon-gift"></i> Pengembalian</a></li>
-			<li class="divider-vertical"></li>
+			<li class="divider-vertical"></li>			
 			<li id="link-grafik"><a onclick="grafik()"><i class="icon-signal"></i> Grafik</a></li>
-			<li class="divider-vertical"></li>
+			<li class="divider-vertical"></li>			
 			<li id="link-pengguna"><a onclick="dataPengguna()"><i class="icon-user"></i> Pengguna</a></li>
-			<li class="divider-vertical"></li>
+			<li class="divider-vertical"></li>			
 			<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-hdd"></i> Database <b class="caret"></b></a>
 				<ul class="dropdown-menu">

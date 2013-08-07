@@ -36,6 +36,18 @@ $sheet->getPageMargins()
 // nama sheet
 $sheet->setTitle(date('d-m-Y'));
 
+// logo
+$nama_logo = ($sekolah->logo) ?: 'blank.png';
+$logo = public_path() . '/foto/sekolah/' . $nama_logo;
+
+// tambah logo
+$draw = new PHPExcel_Worksheet_Drawing();
+$draw->setName('Logo');
+$draw->setDescription('Logo ' . $sekolah->nama);
+$draw->setPath($logo);
+$draw->setHeight(95);
+$draw->setWorksheet($sheet);
+
 // nama sekolah dan judul
 $style = array(
 	'font' => array('size' => 25, 'bold' => true),

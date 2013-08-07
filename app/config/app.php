@@ -113,7 +113,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Barryvdh\DomPDF\ServiceProvider'
+		'Barryvdh\DomPDF\ServiceProvider',
+		'Intervention\Image\ImageServiceProvider'
 
 	),
 
@@ -165,13 +166,13 @@ return array(
 		'Log'			=> 'Illuminate\Support\Facades\Log',
 		'Mail'			=> 'Illuminate\Support\Facades\Mail',
 		'Paginator'		=> 'Illuminate\Support\Facades\Paginator',
-		'Password'	=> 'Illuminate\Support\Facades\Password',
+		'Password'		=> 'Illuminate\Support\Facades\Password',
 		'Queue'		=> 'Illuminate\Support\Facades\Queue',
 		'Redirect'		=> 'Illuminate\Support\Facades\Redirect',
 		'Redis'			=> 'Illuminate\Support\Facades\Redis',
 		'Request'		=> 'Illuminate\Support\Facades\Request',
-		'Response'	=> 'Illuminate\Support\Facades\Response',
-		'Route'		=> 'Illuminate\Support\Facades\Route',
+		'Response'		=> 'Illuminate\Support\Facades\Response',
+		'Route'			=> 'Illuminate\Support\Facades\Route',
 		'Schema'		=> 'Illuminate\Support\Facades\Schema',
 		'Seeder'		=> 'Illuminate\Database\Seeder',
 		'Session'		=> 'Illuminate\Support\Facades\Session',
@@ -180,7 +181,9 @@ return array(
 		'Validator'		=> 'Illuminate\Support\Facades\Validator',
 		'View'			=> 'Illuminate\Support\Facades\View',
 		'PDF'			=> 'Barryvdh\DomPDF\Facade',
-		'Excel'			=> 'PHPExcel'
+		'Excel'			=> 'PHPExcel',
+		'QR'			=> 'Endroid\QrCode\QrCode',
+		'Image'			=> 'Intervention\Image\Facades\Image'
 
 	),
 

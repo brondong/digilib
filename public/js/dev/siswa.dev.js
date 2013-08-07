@@ -256,6 +256,32 @@ function hapusCeklisSiswa()
 	});
 }
 
+function modalQRCode(n)
+{
+	$('.modal').load(url_qrcode + '/' + n, function()
+	{
+		$('.modal').modal('show');
+	});
+}
+
+function unduhQRCode(n)
+{
+	window.open(url_unduh_qrcode + '/' + n);
+}
+
+function modalAnggota(n)
+{
+	$('.modal').load(url_anggota + '/' + n, function()
+	{
+		$('.modal').modal('show');
+	});
+}
+
+function unduhAnggota(n)
+{
+	window.open(url_unduh_anggota + '/' + n);
+}
+
 function PDFSiswa()
 {
 	window.open(url_pdf_siswa);

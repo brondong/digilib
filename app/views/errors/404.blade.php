@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<title>404</title>
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
 </head>
 <body>
 	<div class="container text-center">
@@ -35,8 +35,8 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
 	<script type="text/javascript">
 		var url_home = '{{ route('home') }}';		
 

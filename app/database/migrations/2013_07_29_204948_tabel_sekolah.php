@@ -15,6 +15,7 @@ class TabelSekolah extends Migration {
 		Schema::create('sekolah', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('logo', 20)->nullable();
 			$table->string('nama', 50);
 			$table->string('alamat');
 			$table->timestamps();

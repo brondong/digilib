@@ -6,7 +6,7 @@
 		<div class="control-group" id="control-password-sekarang">
 			{{ Form::label('password_sekarang', 'Password Sekarang', array('class' => 'control-label')) }}
 			<div class="controls">
-				{{ Form::password('password_sekarang', array( 'id' => 'password_sekarang', 'onkeypress' => 'enterRubahPassword(event)', 'placeholder' => 'Ketikkan password sekarang...')) }}
+				{{ Form::password('password_sekarang', array( 'id' => 'password_sekarang', 'onkeypress' => 'enterRubahPassword(event)', 'class' => 'input-focus', 'placeholder' => 'Ketikkan password sekarang...')) }}
 				<span class="help-block" id="error-password-sekarang"></span>
 			</div>
 		</div>

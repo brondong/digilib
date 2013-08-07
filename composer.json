@@ -6,7 +6,9 @@
 		"laravel/framework": "4.0.*",
 		"barryvdh/laravel-dompdf": "dev-master",
 		"phpoffice/phpexcel": "dev-master",
-		"rah/danpu": "2.*@dev"
+		"rah/danpu": "2.*@dev",
+		"intervention/image": "dev-master",
+		"endroid/qrcode": "1.*@dev"
 	},
 	"autoload": {
 		"classmap": [

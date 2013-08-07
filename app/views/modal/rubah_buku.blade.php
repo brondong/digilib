@@ -24,7 +24,7 @@
 		<div class="control-group" id="control-judul">
 			{{ Form::label('judul', 'Judul', array('class' => 'control-label')) }}
 			<div class="controls">
-				{{ Form::text('judul', $buku->judul, array( 'id' => 'judul', 'onkeypress' => 'enterRubahBuku(event)', 'maxlength' => 100, 'placeholder' => 'Ketikkan judul buku...')) }}
+				{{ Form::text('judul', $buku->judul, array( 'id' => 'judul', 'onkeypress' => 'enterRubahBuku(event)', 'maxlength' => 100, 'class' => 'input-focus', 'placeholder' => 'Ketikkan judul buku...')) }}
 				<span class="help-block" id="error-judul"></span>
 			</div>
 		</div>

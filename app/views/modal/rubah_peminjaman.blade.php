@@ -6,7 +6,7 @@
 		<div class="control-group" id="control-buku">
 			{{ Form::label('buku', 'Buku', array('class' => 'control-label')) }}
 			<div class="controls">
-				<select name="buku" class="type" placeholder="Ketikkan judul buku...">
+				<select name="buku" class="type input-focus" placeholder="Ketikkan judul buku...">
 					<option></option>
 					@foreach($buku as $data)
 						<option value="{{ $data->id }}" {{ ($data->id == $pinjam->id_buku) ? 'selected' : '' }}>{{ $data->judul }}</option>

@@ -24,7 +24,7 @@
 		<div class="control-group" id="control-nis">
 			{{ Form::label('nis', 'NIS', array('class' => 'control-label')) }}
 			<div class="controls">
-				{{ Form::text('nis', null, array( 'id' => 'nis', 'onkeypress' => 'enterTambahSiswa(event)', 'maxlength' => 10, 'placeholder' => 'Ketikkan nomor induk siswa...')) }}
+				{{ Form::text('nis', null, array( 'id' => 'nis', 'onkeypress' => 'enterTambahSiswa(event)', 'maxlength' => 10, 'class' => 'input-focus', 'placeholder' => 'Ketikkan nomor induk siswa...')) }}
 				<span class="help-block" id="error-nis"></span>
 			</div>
 		</div>

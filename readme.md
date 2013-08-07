@@ -30,7 +30,7 @@ Digital Library merupakan aplikasi  yang dibuat dengan tujuan untuk mempermudah 
 
 			php artisan migrate --seed
 
-6.	Login menggunakan akun admin dengan username `admin` dan password `admins`
+6.	Login menggunakan akun admin dengan username `admin` dan password `admins` pada
 		
 		http://localhost/digilib/public/login
 
@@ -56,32 +56,10 @@ Digital Library merupakan aplikasi  yang dibuat dengan tujuan untuk mempermudah 
 
 *	Laporan berbentuk PDF & Microsoft Excel
 
+*	Generate QR Code
+
+*	Generate kartu anggota perpustakaan
+
 *	AJAX backend process
 
-## Credits
-
-*	[Composer](http://getcomposer.org/)
-
-*	[Laravel Framework](http://laravel.com)
-
-*	[Twitter Bootstrap](http://twitter.github.io/bootstrap)
-
-*	[Jasny Bootstrap](http://jasny.github.io/bootstrap)
-
-*	[Bootstrap Datepicker](http://www.eyecon.ro/bootstrap-datepicker)
-
-*	[jQuery](http://jquery.com)
-
-*	[jQuery Form](https://github.com/malsup/form)
-
-*	[Messenger](https://github.com/HubSpot/messenger)
-
-*	[Laravel DOMPDF](https://github.com/barryvdh/laravel-dompdf)
-
-*	[PHPExcel](http://phpexcel.codeplex.com)
-
-*	[Highcharts](http://www.highcharts.com)
-
-*	[Danpu](https://github.com/gocom/danpu)
-
-*	[Glyphish](http://www.glyphish.com/)
+>	Anda bisa melihat screenshot aplikasi di album foto [facebook](https://www.facebook.com/media/set/?set=a.567110136685680.1073741827.100001600956092&type=1&l=6605117d1f) saya.

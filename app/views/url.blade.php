@@ -19,6 +19,10 @@
 	var url_tambah_siswa = '{{ route('tambah_siswa') }}';
 	var url_rubah_siswa = '{{ route('rubah_siswa') }}';
 	var url_hapus_siswa = '{{ route('hapus_siswa') }}';
+	var url_qrcode = '{{ route('qrcode') }}';
+	var url_unduh_qrcode = '{{ route('unduh_qrcode') }}';
+	var url_anggota = '{{ route('anggota') }}';
+	var url_unduh_anggota = '{{ route('unduh_anggota') }}';
 	var url_hapus_ceklis_siswa = '{{ route('hapus_ceklis_siswa') }}';
 	var url_pdf_siswa = '{{ route('pdf_siswa') }}';
 	var url_excel_siswa = '{{ route('excel_siswa') }}';

@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
 	<style type="text/css">
 		body {
 			background: #fff;
@@ -11,7 +11,7 @@
 			margin-bottom: 20px;
 			border-bottom: 5px double #ddd;
 		}
-		h2, h4 {
+		h3, h5 {
 			color: #333;
 		}
 		.table th, .table > tbody > .tengah {
@@ -28,9 +28,15 @@
 </head>
 <body>
 	<header class="text-center">
-		<h2>{{{ $sekolah->nama }}}</h2>
-		<h2>DATA PENGGUNA</h2>
-		<h4>{{{ $sekolah->alamat }}}</h4>
+		<?php
+			$logo = ($sekolah->logo) ?: 'blank.png';
+		?>
+
+		<img src="{{ asset('foto/sekolah/' . $logo) }}" alt="" id="logo" />
+
+		<h3>{{{ $sekolah->nama }}}</h3>
+		<h3>DATA PENGGUNA</h3>
+		<h5>{{{ $sekolah->alamat }}}</h5>
 	</header>
 	<table class="table table-bordered">
 		<thead>

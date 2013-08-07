@@ -5,8 +5,8 @@ body {
 	margin-top: 50px;
 }
 .konten {
-	margin-bottom: 70px;
 	min-height: 470px;
+	margin: 20px auto;
 }
 .konten, .form-login {
 	padding: 20px;
@@ -52,9 +52,6 @@ body {
 }
 a:hover {
 	cursor: pointer;
-}
-.konten {
-	margin-top: 20px;
 }
 .kosong {
 	margin: 200px auto 0;
@@ -108,6 +105,9 @@ textarea {
 input[readonly] {
 	background: #fff;
 	cursor: pointer;
+}
+#logo {
+	max-height: 120px;
 }
 .progress {
 	margin: 0 auto;

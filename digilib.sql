@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.5
+-- version 4.0.4.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Waktu pembuatan: 03. Agustus 2013 jam 10:58
--- Versi Server: 5.5.16
--- Versi PHP: 5.3.8
+-- Inang: 127.0.0.1
+-- Waktu pembuatan: 07 Agu 2013 pada 11.44
+-- Versi Server: 5.6.11
+-- Versi PHP: 5.5.1
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,12 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `digilib`
+-- Basis data: `digilib`
 --
-
-DROP DATABASE IF EXISTS digilib;
-CREATE DATABASE digilib;
-USE digilib;
+CREATE DATABASE IF NOT EXISTS `digilib` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `digilib`;
 
 -- --------------------------------------------------------
 
@@ -30,8 +28,7 @@ USE digilib;
 -- Struktur dari tabel `admin`
 --
 
-DROP TABLE IF EXISTS `admin`;
-CREATE TABLE `admin` (
+CREATE TABLE IF NOT EXISTS `admin` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `foto` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `nama` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
@@ -47,7 +44,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `foto`, `nama`, `username`, `password`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'Admin', 'admin', '$2y$08$YOGqeAE5CXIoj5VNqiPZi.oxjLBitAuLYTRyjd5G0xYYK9oyC3xqm', '2013-08-03 08:58:45', '2013-08-03 08:58:45');
+(1, NULL, 'Admin', 'admin', '$2y$08$8YQ3piK6khd5/EVE2mks6uf7deDTJmtaxyIUtDhVpSq8XwdqgcIyu', '2013-08-07 09:43:57', '2013-08-07 09:43:57');
 
 -- --------------------------------------------------------
 
@@ -55,8 +52,7 @@ INSERT INTO `admin` (`id`, `foto`, `nama`, `username`, `password`, `created_at`,
 -- Struktur dari tabel `buku`
 --
 
-DROP TABLE IF EXISTS `buku`;
-CREATE TABLE `buku` (
+CREATE TABLE IF NOT EXISTS `buku` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `cover` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `judul` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
@@ -75,8 +71,7 @@ CREATE TABLE `buku` (
 -- Struktur dari tabel `migrations`
 --
 
-DROP TABLE IF EXISTS `migrations`;
-CREATE TABLE `migrations` (
+CREATE TABLE IF NOT EXISTS `migrations` (
   `migration` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -99,8 +94,7 @@ INSERT INTO `migrations` (`migration`, `batch`) VALUES
 -- Struktur dari tabel `peminjaman`
 --
 
-DROP TABLE IF EXISTS `peminjaman`;
-CREATE TABLE `peminjaman` (
+CREATE TABLE IF NOT EXISTS `peminjaman` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `id_buku` int(11) NOT NULL,
   `id_siswa` int(11) NOT NULL,
@@ -119,9 +113,9 @@ CREATE TABLE `peminjaman` (
 -- Struktur dari tabel `sekolah`
 --
 
-DROP TABLE IF EXISTS `sekolah`;
-CREATE TABLE `sekolah` (
+CREATE TABLE IF NOT EXISTS `sekolah` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `logo` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `nama` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `alamat` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -133,8 +127,8 @@ CREATE TABLE `sekolah` (
 -- Dumping data untuk tabel `sekolah`
 --
 
-INSERT INTO `sekolah` (`id`, `nama`, `alamat`, `created_at`, `updated_at`) VALUES
-(1, 'NAMA SEKOLAH', 'Tuliskan Alamat Sekolah Disini', '2013-08-03 08:58:45', '2013-08-03 08:58:45');
+INSERT INTO `sekolah` (`id`, `logo`, `nama`, `alamat`, `created_at`, `updated_at`) VALUES
+(1, NULL, 'NAMA SEKOLAH', 'Tuliskan Alamat Sekolah Disini', '2013-08-07 09:43:57', '2013-08-07 09:43:57');
 
 -- --------------------------------------------------------
 
@@ -142,8 +136,7 @@ INSERT INTO `sekolah` (`id`, `nama`, `alamat`, `created_at`, `updated_at`) VALUE
 -- Struktur dari tabel `sessions`
 --
 
-DROP TABLE IF EXISTS `sessions`;
-CREATE TABLE `sessions` (
+CREATE TABLE IF NOT EXISTS `sessions` (
   `id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `payload` text COLLATE utf8_unicode_ci NOT NULL,
   `last_activity` int(11) NOT NULL,
@@ -156,8 +149,7 @@ CREATE TABLE `sessions` (
 -- Struktur dari tabel `siswa`
 --
 
-DROP TABLE IF EXISTS `siswa`;
-CREATE TABLE `siswa` (
+CREATE TABLE IF NOT EXISTS `siswa` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `foto` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `nis` int(11) NOT NULL,

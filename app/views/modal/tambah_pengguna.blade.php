@@ -24,7 +24,7 @@
 		<div class="control-group" id="control-nama">
 			{{ Form::label('nama', 'Nama', array('class' => 'control-label')) }}
 			<div class="controls">
-				{{ Form::text('nama', null, array( 'id' => 'nama', 'onkeypress' => 'enterTambahPengguna(event)', 'maxlength' => 50, 'autocomplete' => 'off', 'placeholder' => 'Ketikkan nama pengguna...')) }}
+				{{ Form::text('nama', null, array( 'id' => 'nama', 'onkeypress' => 'enterTambahPengguna(event)', 'maxlength' => 50, 'class' => 'input-focus', 'autocomplete' => 'off', 'placeholder' => 'Ketikkan nama pengguna...')) }}
 				<span class="help-block" id="error-nama"></span>
 			</div>
 		</div>
